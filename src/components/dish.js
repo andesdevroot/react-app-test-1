@@ -1,4 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+
+import '../styles/dish.css';
+import Button from '@mui/material/Button';
+
+
 
 
 export class Flag extends Component {
@@ -14,9 +19,10 @@ export class Flag extends Component {
 export class Ingredient extends Component {
     render () {
         return (
-        <div>
-            <h1>Ingredientes</h1>
-        </div>
+        <Fragment>
+            <h4>Ingredientes</h4>
+            <h4>Ingredientes</h4>
+        </Fragment>
         );
     }
 }
@@ -27,9 +33,10 @@ export class Ingredient extends Component {
 class Dish extends Component {
   render() {
     return (
-        <div>
+        <div className="dish">
         <h1> Platillo</h1>
         <Ingredient/>
+        <Button variant="contained">Contained</Button>
         </div>
     );
   }
